@@ -1,363 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Safe Eye Solutions | Premium CCTV Security</title>
+<title>Safe Eye Solutions | CCTV & Security</title>
+
+<meta name="description" content="Premium CCTV Installation in Mangalore, Udupi & Manipal">
+
+<link rel="stylesheet" href="style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-}
-
-body{
-font-family:'Manrope',sans-serif;
-background:#060b14;
-color:#fff;
-overflow-x:hidden;
-}
-
-body::before{
-content:"";
-position:fixed;
-width:700px;
-height:700px;
-background:#0ea5e955;
-border-radius:50%;
-filter:blur(170px);
-top:-250px;
-right:-250px;
-z-index:-1;
-}
-
-body::after{
-content:"";
-position:fixed;
-width:600px;
-height:600px;
-background:#2563eb33;
-border-radius:50%;
-filter:blur(170px);
-bottom:-220px;
-left:-220px;
-z-index:-1;
-}
-
-a{
-text-decoration:none;
-color:white;
-}
-
-header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-padding:20px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(5,10,20,.65);
-backdrop-filter:blur(16px);
-border-bottom:1px solid rgba(255,255,255,.08);
-z-index:1000;
-}
-
-.logo{
-font-family:'Space Grotesk',sans-serif;
-font-size:30px;
-font-weight:700;
-letter-spacing:2px;
-}
-
-.logo span{
-color:#38bdf8;
-}
-
-nav{
-display:flex;
-gap:35px;
-}
-
-nav a{
-opacity:.85;
-transition:.3s;
-font-weight:600;
-}
-
-nav a:hover{
-opacity:1;
-color:#38bdf8;
-}
-
-.hero{
-min-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:130px 25px 80px;
-background:
-linear-gradient(rgba(4,8,15,.82),rgba(4,8,15,.90)),
-url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80");
-background-size:cover;
-background-position:center;
-}
-
-.hero-content{
-max-width:900px;
-}
-
-.badge{
-display:inline-block;
-padding:12px 22px;
-border-radius:50px;
-background:rgba(255,255,255,.08);
-border:1px solid rgba(255,255,255,.12);
-font-size:14px;
-letter-spacing:2px;
-margin-bottom:30px;
-}
-
-.hero h1{
-font-family:'Space Grotesk',sans-serif;
-font-size:76px;
-line-height:1.05;
-margin-bottom:28px;
-}
-
-.hero h1 span{
-color:#38bdf8;
-}
-
-.hero p{
-font-size:22px;
-color:#cfd8e3;
-line-height:1.8;
-max-width:760px;
-margin:auto;
-}
-
-.buttons{
-margin-top:45px;
-display:flex;
-justify-content:center;
-gap:18px;
-flex-wrap:wrap;
-}
-
-.btn{
-padding:18px 38px;
-border-radius:60px;
-font-weight:700;
-transition:.35s;
-}
-
-.primary{
-background:#2563eb;
-}
-
-.primary:hover{
-transform:translateY(-5px);
-background:#1d4ed8;
-}
-
-.secondary{
-border:2px solid rgba(255,255,255,.15);
-background:rgba(255,255,255,.06);
-backdrop-filter:blur(15px);
-}
-
-.secondary:hover{
-transform:translateY(-5px);
-}
-
-.stats{
-margin-top:70px;
-display:flex;
-justify-content:center;
-gap:70px;
-flex-wrap:wrap;
-}
-
-.stat h2{
-font-family:'Space Grotesk';
-font-size:52px;
-color:#38bdf8;
-}
-
-.stat span{
-color:#cfd8e3;
-font-size:15px;
-}
-
-section{
-padding:100px 8%;
-}
-
-.title{
-text-align:center;
-font-family:'Space Grotesk';
-font-size:48px;
-margin-bottom:60px;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
-gap:28px;
-}
-
-.card{
-background:rgba(255,255,255,.05);
-border:1px solid rgba(255,255,255,.08);
-backdrop-filter:blur(18px);
-padding:35px;
-border-radius:24px;
-transition:.35s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-border-color:#38bdf8;
-}
-
-.card h3{
-font-family:'Space Grotesk';
-margin-bottom:18px;
-font-size:24px;
-}
-
-.card p{
-line-height:1.8;
-color:#cfd8e3;
-}
-
-@media(max-width:768px){
-
-nav{
-display:none;
-}
-
-.hero h1{
-font-size:46px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-.title{
-font-size:34px;
-}
-
-.stats{
-gap:35px;
-}
-
-}
-
-</style>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
 
 <body>
 
-  <header>
+<div id="loader">
 
-<div class="logo">
-SAFE <span>EYE</span>
+<div class="loader-circle"></div>
+
 </div>
 
-<nav>
+
+
+<header id="header">
+
+<div class="container">
+
+<a href="#" class="logo">
+
+SAFE<span>EYE</span>
+
+</a>
+
+<nav id="nav">
+
+<a href="#home">Home</a>
+
 <a href="#about">About</a>
+
 <a href="#services">Services</a>
-<a href="#brands">Brands</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#reviews">Reviews</a>
+
 <a href="#contact">Contact</a>
+
 </nav>
+
+<div id="menu-btn">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+</div>
 
 </header>
 
 
-<section class="hero">
+
+<section class="hero" id="home">
+
+<div class="hero-overlay"></div>
 
 <div class="hero-content">
 
-<div class="badge">
-TRUSTED BY 350+ HAPPY CUSTOMERS
+<div class="hero-tag">
+
+Trusted by 350+ Happy Customers
+
 </div>
 
 <h1>
 
-Security<br>
+Security
 
-<span>Without Compromise.</span>
+<span>Without</span>
+
+Compromise.
 
 </h1>
 
 <p>
 
-Premium CCTV & Security Solutions for Homes,
-Businesses and Industries across Mangalore.
+Professional CCTV Installation for Homes,
 
-Professional installation.
-Original Products.
-Reliable Support.
+Offices,
+
+Shops,
+
+Apartments and Industries across
+
+Mangalore,
+
+Udupi & Manipal.
 
 </p>
 
-<div class="buttons">
+<div class="hero-buttons">
 
-<a href="https://wa.me/917259356642"
-class="btn primary">
+<a href="#contact" class="btn primary">
 
-Book Free Site Survey
+Get Free Quote
 
 </a>
 
-<a href="tel:+919902742523"
+<a href="https://wa.me/917259356642"
+
 class="btn secondary">
 
-Call Now
+WhatsApp
 
 </a>
 
 </div>
 
-<div class="stats">
+<div class="hero-stats">
 
-<div class="stat">
+<div>
 
 <h2>350+</h2>
 
-<span>Happy Customers</span>
+<p>Customers</p>
 
 </div>
 
-<div class="stat">
+<div>
 
 <h2>24×7</h2>
 
-<span>Support</span>
+<p>Support</p>
 
 </div>
 
-<div class="stat">
+<div>
 
-<h2>3</h2>
+<h2>100%</h2>
 
-<span>Premium Brands</span>
+<p>Original Products</p>
 
 </div>
 
@@ -366,181 +159,195 @@ Call Now
 </div>
 
 </section>
+
 
 
 <section id="about">
 
-<h2 class="title">
+<div class="container">
 
-Why Safe Eye?
+<div class="section-title">
+
+<h2>
+
+Why Choose Safe Eye?
 
 </h2>
 
-<div class="cards">
-
-<div class="card">
-
-<h3>Original Products</h3>
-
 <p>
 
-We install only genuine Hikvision,
-CP Plus and Dahua products.
+Your trusted CCTV partner in Coastal Karnataka.
 
 </p>
 
 </div>
 
-<div class="card">
+<div class="features">
 
-<h3>Professional Installation</h3>
+<div class="feature-card">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>
+
+Trusted Protection
+
+</h3>
 
 <p>
 
-Neat wiring,
-professional setup
-and long-term reliability.
+Reliable surveillance systems for every property.
 
 </p>
 
 </div>
 
-<div class="card">
+<div class="feature-card">
 
-<h3>Mobile Monitoring</h3>
+<i class="fa-solid fa-mobile-screen"></i>
+
+<h3>
+
+Remote Monitoring
+
+</h3>
 
 <p>
 
-View your cameras
-from anywhere in the world.
+View live cameras from anywhere.
 
 </p>
 
 </div>
 
-<div class="card">
+<div class="feature-card">
 
-<h3>Quick Support</h3>
+<i class="fa-solid fa-award"></i>
+
+<h3>
+
+Original Products
+
+</h3>
 
 <p>
 
-Fast service whenever
-you need assistance.
+Hikvision,
+
+CP Plus
+
+and
+
+Dahua.
 
 </p>
+
+</div>
+
+<div class="feature-card">
+
+<i class="fa-solid fa-headset"></i>
+
+<h3>
+
+After Sales Support
+
+</h3>
+
+<p>
+
+Fast service whenever you need help.
+
+</p>
+
+</div>
 
 </div>
 
 </div>
 
 </section>
-
-
-
 <section id="services">
 
-<h2 class="title">
+<div class="container">
 
-Our Services
-
-</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>🏠 Home CCTV</h3>
-
-<p>
-
-Complete home surveillance systems.
-
-</p>
-
+<div class="section-title">
+<h2>Our Services</h2>
+<p>Complete security solutions for homes and businesses.</p>
 </div>
 
-<div class="card">
+<div class="services-grid">
 
-<h3>🏢 Commercial CCTV</h3>
-
-<p>
-
-Offices, shops and commercial buildings.
-
-</p>
-
+<div class="service-card">
+<i class="fa-solid fa-video"></i>
+<h3>CCTV Installation</h3>
+<p>Professional CCTV installation with neat wiring and expert setup.</p>
 </div>
 
-<div class="card">
-
-<h3>🏭 Industrial Security</h3>
-
-<p>
-
-Warehouses and factories.
-
-</p>
-
+<div class="service-card">
+<i class="fa-solid fa-house"></i>
+<h3>Home Security</h3>
+<p>Protect your family with reliable surveillance solutions.</p>
 </div>
 
-<div class="card">
-
-<h3>📱 Remote Monitoring</h3>
-
-<p>
-
-Monitor cameras from your mobile.
-
-</p>
-
+<div class="service-card">
+<i class="fa-solid fa-building"></i>
+<h3>Office Security</h3>
+<p>Monitor employees, visitors and business operations.</p>
 </div>
 
-<div class="card">
-
-<h3>🔐 Access Control</h3>
-
-<p>
-
-Biometric and access control systems.
-
-</p>
-
+<div class="service-card">
+<i class="fa-solid fa-industry"></i>
+<h3>Industrial CCTV</h3>
+<p>Warehouses, factories and industrial surveillance systems.</p>
 </div>
 
-<div class="card">
+<div class="service-card">
+<i class="fa-solid fa-network-wired"></i>
+<h3>Networking</h3>
+<p>Structured LAN cabling and networking solutions.</p>
+</div>
 
-<h3>🛠 AMC</h3>
-
-<p>
-
-Annual Maintenance Contracts.
-
-</p>
+<div class="service-card">
+<i class="fa-solid fa-screwdriver-wrench"></i>
+<h3>AMC & Maintenance</h3>
+<p>Regular maintenance and quick service support.</p>
+</div>
 
 </div>
 
 </div>
 
 </section>
+
+
+
 <section id="brands">
 
-<h2 class="title">Trusted Brands</h2>
+<div class="container">
 
-<div class="cards">
+<div class="section-title">
 
-<div class="card">
-<h3>Hikvision</h3>
-<p>World-leading CCTV & AI surveillance solutions.</p>
+<h2>Authorized Brands</h2>
+
+<p>Only genuine products from trusted manufacturers.</p>
+
 </div>
 
-<div class="card">
-<h3>CP Plus</h3>
-<p>Reliable security solutions for homes and businesses.</p>
+<div class="brand-grid">
+
+<div class="brand-card">
+<h3>HIKVISION</h3>
 </div>
 
-<div class="card">
-<h3>Dahua</h3>
-<p>Advanced video surveillance technology.</p>
+<div class="brand-card">
+<h3>CP PLUS</h3>
+</div>
+
+<div class="brand-card">
+<h3>DAHUA</h3>
+</div>
+
 </div>
 
 </div>
@@ -549,55 +356,156 @@ Annual Maintenance Contracts.
 
 
 
-<section>
+<section id="gallery">
 
-<h2 class="title">
+<div class="container">
 
-What Our Customers Say
+<div class="section-title">
 
-</h2>
+<h2>Recent Installations</h2>
 
-<div class="cards">
-
-<div class="card">
-
-★★★★★
-
-<h3>Excellent Service</h3>
-
-<p>
-
-Very neat installation and professional work.
-
-</p>
+<p>Some of our recent CCTV projects.</p>
 
 </div>
 
-<div class="card">
+<div class="gallery-grid">
 
-★★★★★
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="">
+</div>
 
-<h3>Highly Recommended</h3>
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=900&q=80" alt="">
+</div>
 
-<p>
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?auto=format&fit=crop&w=900&q=80" alt="">
+</div>
 
-Good support and genuine products.
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="">
+</div>
 
-</p>
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=80" alt="">
+</div>
+
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=900&q=80" alt="">
+</div>
 
 </div>
 
-<div class="card">
+</div>
 
-★★★★★
+</section>
 
-<h3>Value for Money</h3>
 
-<p>
 
-Installed quickly and everything works perfectly.
+<section class="counter-section">
 
-</p>
+<div class="container">
+
+<div class="counter-grid">
+
+<div class="counter-box">
+
+<h2 class="counter" data-target="350">0</h2>
+
+<p>Happy Customers</p>
+
+</div>
+
+<div class="counter-box">
+
+<h2 class="counter" data-target="500">0</h2>
+
+<p>Cameras Installed</p>
+
+</div>
+
+<div class="counter-box">
+
+<h2 class="counter" data-target="24">0</h2>
+
+<p>Support</p>
+
+</div>
+
+<div class="counter-box">
+
+<h2 class="counter" data-target="100">0</h2>
+
+<p>Customer Satisfaction</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section id="reviews">
+
+<div class="container">
+
+<div class="section-title">
+<h2>What Our Customers Say</h2>
+<p>Trusted by hundreds of satisfied customers.</p>
+</div>
+
+<div class="testimonial-grid">
+
+<div class="testimonial-card">
+⭐⭐⭐⭐⭐
+<p>"Excellent installation and neat wiring. Highly recommended."</p>
+<h4>- Home Owner</h4>
+</div>
+
+<div class="testimonial-card">
+⭐⭐⭐⭐⭐
+<p>"Professional team and genuine Hikvision products."</p>
+<h4>- Business Owner</h4>
+</div>
+
+<div class="testimonial-card">
+⭐⭐⭐⭐⭐
+<p>"Quick installation and excellent after-sales support."</p>
+<h4>- Shop Owner</h4>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="faq">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Frequently Asked Questions</h2>
+</div>
+
+<div class="faq">
+
+<div class="faq-item">
+<h3>Do you provide installation?</h3>
+<p>Yes. We provide professional installation across Mangalore, Udupi and Manipal.</p>
+</div>
+
+<div class="faq-item">
+<h3>Which CCTV brands do you install?</h3>
+<p>Hikvision, CP Plus and Dahua.</p>
+</div>
+
+<div class="faq-item">
+<h3>Can I watch cameras on my phone?</h3>
+<p>Yes. Live viewing and playback are available on Android and iPhone.</p>
+</div>
 
 </div>
 
@@ -609,50 +517,65 @@ Installed quickly and everything works perfectly.
 
 <section id="contact">
 
-<h2 class="title">
+<div class="container">
 
-Contact Us
+<div class="section-title">
+<h2>Contact Safe Eye Solutions</h2>
+<p>Let's secure your home or business.</p>
+</div>
 
-</h2>
+<div class="contact-grid">
 
-<div class="cards">
+<div class="contact-card">
 
-<div class="card">
+<h3>Call Us</h3>
 
-<h3>Phone</h3>
+<p>7259356642</p>
 
-<p>
-
-7259356642<br>
-9902742523
-
-</p>
+<p>9902742523</p>
 
 </div>
 
-<div class="card">
+<div class="contact-card">
+
+<h3>WhatsApp</h3>
+
+<p>7259356642</p>
+
+</div>
+
+<div class="contact-card">
 
 <h3>Email</h3>
 
-<p>
-
-winktocam@gmail.com
-
-</p>
+<p>winktocam@gmail.com</p>
 
 </div>
 
-<div class="card">
+<div class="contact-card">
 
 <h3>Address</h3>
 
 <p>
 
-Urwa Store<br>
-Behind Hotel Krishna Vilas<br>
+Urwa Store
+
+Behind Hotel Krishna Vilas
+
 Mangalore - 575006
 
 </p>
+
+</div>
+
+</div>
+
+<div class="map-box">
+
+<iframe
+src="https://maps.google.com/maps?q=Mangalore&t=&z=13&ie=UTF8&iwloc=&output=embed"
+loading="lazy">
+</iframe>
 
 </div>
 
@@ -662,46 +585,51 @@ Mangalore - 575006
 
 
 
-<footer style="padding:50px 8%;text-align:center;border-top:1px solid rgba(255,255,255,.08);">
+<footer>
 
-<h2 style="font-family:'Space Grotesk';margin-bottom:15px;">
+<div class="container">
 
-SAFE EYE SOLUTIONS
+<h2>SAFE EYE SOLUTIONS</h2>
 
-</h2>
-
-<p style="color:#cfd8e3;">
+<p>
 
 Protecting Homes • Businesses • Industries
 
 </p>
 
-<p style="margin-top:20px;color:#777;">
+<p>
 
-© 2026 Safe Eye Solutions. All Rights Reserved.
+Serving Mangalore • Udupi • Manipal
 
 </p>
+
+<p>
+
+© 2026 Safe Eye Solutions
+
+</p>
+
+</div>
 
 </footer>
 
 
 
-<a href="https://wa.me/917259356642"
-style="
-position:fixed;
-bottom:25px;
-right:25px;
-background:#25D366;
-padding:18px 22px;
-border-radius:60px;
-font-weight:bold;
-box-shadow:0 10px 25px rgba(0,0,0,.35);
-z-index:9999;
-">
+<a href="https://wa.me/917259356642" class="floating-whatsapp">
 
-WhatsApp
+<i class="fa-brands fa-whatsapp"></i>
 
 </a>
+
+<a href="tel:+919902742523" class="floating-call">
+
+<i class="fa-solid fa-phone"></i>
+
+</a>
+
+
+
+<script src="script.js"></script>
 
 </body>
 
