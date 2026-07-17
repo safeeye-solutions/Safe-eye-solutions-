@@ -235,29 +235,23 @@ cursor:pointer;
 }
 
 .hero{
+    position: relative;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
 
-min-height:100vh;
+    background:
+    linear-gradient(
+        rgba(5,10,20,.78),
+        rgba(5,10,20,.90)
+    ),
+    url("images/hero-bg.png");
 
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-position:relative;
-
-text-align:center;
-
-background:
-
-linear-gradient(rgba(4,8,15,.80),rgba(4,8,15,.90)),
-
-url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=2000&q=80");
-
-background-size:cover;
-
-background-position:center;
-
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
 }
 
 .hero-content{
