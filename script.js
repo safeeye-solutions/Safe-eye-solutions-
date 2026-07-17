@@ -104,21 +104,23 @@ const increment = Math.ceil(target/speed);
 
 if(current < target){
 
-if(target == 99){
-    counter.innerText = (current + increment) + "%";
-}else{
-    counter.innerText = (current + increment) + "+";
-}
+    const next = current + increment;
 
-setTimeout(update,40);
+    if(target == 8){
+        counter.innerText = Math.min(next,target);
+    }else{
+        counter.innerText = Math.min(next,target) + "+";
+    }
+
+    setTimeout(update,40);
 
 }else{
 
-if(target == 99){
-    counter.innerText = target + "%";
-}else{
-    counter.innerText = target + "+";
-}
+    if(target == 8){
+        counter.innerText = target;
+    }else{
+        counter.innerText = target + "+";
+    }
 
 }
 
