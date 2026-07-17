@@ -104,13 +104,13 @@ const increment = Math.ceil(target/speed);
 
 if(current < target){
 
-counter.innerText = current + increment;
+counter.innerText = (current + increment) + "+";
 
 setTimeout(update,40);
 
 }else{
 
-counter.innerText = target;
+counter.innerText = target + "+";
 
 }
 
