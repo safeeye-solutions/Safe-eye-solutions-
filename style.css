@@ -1047,3 +1047,23 @@ transition:1s;
 opacity:1;
 transform:translateY(0);
 }
+/* COMPANY ABOUT */
+
+#company-about{
+    padding:90px 0;
+    background:#070b14;
+}
+
+.about-text{
+    max-width:900px;
+    margin:30px auto 0;
+    text-align:center;
+    color:#d7d7d7;
+    font-size:18px;
+    line-height:1.9;
+    font-weight:300;
+}
+
+.about-text strong{
+    color:#ffffff;
+}
