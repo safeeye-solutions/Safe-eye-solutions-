@@ -328,75 +328,81 @@ CONSOLE MESSAGE
 console.log("%cSafe Eye Solutions","font-size:24px;color:#38bdf8;font-weight:bold;");
 
 console.log("Website Developed for Safe Eye Solutions");
-/* ==========================================
-   SERVICES SLIDER
-========================================== */
+/* ===========================
+   SERVICE SLIDER
+=========================== */
 
 const slides = document.querySelectorAll(".service-slide");
-const prevBtn = document.getElementById("prevService");
-const nextBtn = document.getElementById("nextService");
+const prev = document.getElementById("prevService");
+const next = document.getElementById("nextService");
 const counter = document.getElementById("serviceCounter");
 
-let currentSlide = 0;
+let current = 0;
 
-function showSlide(index){
+function updateSlider(){
 
-slides.forEach(slide=>slide.classList.remove("active"));
+slides.forEach((slide,index)=>{
 
-slides[index].classList.add("active");
-
-counter.innerHTML = `${index+1} / ${slides.length}`;
-
-}
-
-if(nextBtn){
-
-nextBtn.addEventListener("click",()=>{
-
-currentSlide++;
-
-if(currentSlide >= slides.length){
-
-currentSlide = 0;
-
-}
-
-showSlide(currentSlide);
+slide.style.display = index===current ? "block" : "none";
 
 });
 
-}
+if(counter){
 
-if(prevBtn){
-
-prevBtn.addEventListener("click",()=>{
-
-currentSlide--;
-
-if(currentSlide < 0){
-
-currentSlide = slides.length-1;
+counter.textContent = `${current+1} / ${slides.length}`;
 
 }
 
-showSlide(currentSlide);
+}
 
-});
+if(next){
+
+next.onclick = ()=>{
+
+current++;
+
+if(current>=slides.length){
+
+current=0;
+
+}
+
+updateSlider();
+
+};
+
+}
+
+if(prev){
+
+prev.onclick = ()=>{
+
+current--;
+
+if(current<0){
+
+current=slides.length-1;
+
+}
+
+updateSlider();
+
+};
 
 }
 
 setInterval(()=>{
 
-currentSlide++;
+current++;
 
-if(currentSlide >= slides.length){
+if(current>=slides.length){
 
-currentSlide = 0;
+current=0;
 
 }
 
-showSlide(currentSlide);
+updateSlider();
 
 },5000);
 
-showSlide(currentSlide);
+updateSlider();
