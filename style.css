@@ -1128,12 +1128,13 @@ transform:translateY(0);
 
 }
 
-.service-slide.active{
-
-    display:block;
-
+.service-slide{
+    display:none;
     animation:fadeSlide .6s ease;
+}
 
+.service-slide.active{
+    display:block;
 }
 
 .service-image{
