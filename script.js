@@ -328,3 +328,75 @@ CONSOLE MESSAGE
 console.log("%cSafe Eye Solutions","font-size:24px;color:#38bdf8;font-weight:bold;");
 
 console.log("Website Developed for Safe Eye Solutions");
+/* ==========================================
+   SERVICES SLIDER
+========================================== */
+
+const slides = document.querySelectorAll(".service-slide");
+const prevBtn = document.getElementById("prevService");
+const nextBtn = document.getElementById("nextService");
+const counter = document.getElementById("serviceCounter");
+
+let currentSlide = 0;
+
+function showSlide(index){
+
+slides.forEach(slide=>slide.classList.remove("active"));
+
+slides[index].classList.add("active");
+
+counter.innerHTML = `${index+1} / ${slides.length}`;
+
+}
+
+if(nextBtn){
+
+nextBtn.addEventListener("click",()=>{
+
+currentSlide++;
+
+if(currentSlide >= slides.length){
+
+currentSlide = 0;
+
+}
+
+showSlide(currentSlide);
+
+});
+
+}
+
+if(prevBtn){
+
+prevBtn.addEventListener("click",()=>{
+
+currentSlide--;
+
+if(currentSlide < 0){
+
+currentSlide = slides.length-1;
+
+}
+
+showSlide(currentSlide);
+
+});
+
+}
+
+setInterval(()=>{
+
+currentSlide++;
+
+if(currentSlide >= slides.length){
+
+currentSlide = 0;
+
+}
+
+showSlide(currentSlide);
+
+},5000);
+
+showSlide(currentSlide);
