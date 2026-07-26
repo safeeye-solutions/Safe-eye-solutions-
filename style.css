@@ -153,11 +153,11 @@ left:0;
 
 width:100%;
 
-background:rgba(5,10,20,.65);
+background: #f8f6f2;
 
 backdrop-filter:blur(16px);
 
-border-bottom:1px solid rgba(255,255,255,.08);
+border-bottom:1px solid rgba(0,0,0,.08);
 
 z-index:9999;
 
