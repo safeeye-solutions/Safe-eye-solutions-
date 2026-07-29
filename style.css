@@ -561,41 +561,43 @@ BRANDS
 =========================== */
 
 .brand-grid{
-
-display:grid;
-
-grid-template-columns:repeat(3,1fr);
-
-gap:25px;
-
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+    margin-top:50px;
 }
 
 .brand-card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
 
-background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.15);
 
-border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
 
-padding:45px;
+    height:140px;
 
-border-radius:22px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-text-align:center;
+    transition:.35s;
 
-font-size:30px;
-
-font-family:'Space Grotesk';
-
-transition:.35s;
-
+    padding:25px;
 }
 
 .brand-card:hover{
+    transform:translateY(-8px);
+    border-color:#d4af37;
+    box-shadow:0 15px 40px rgba(212,175,55,.25);
+}
 
-background:#2563eb;
-
-transform:translateY(-10px);
-
+.brand-card img{
+    max-width:150px;
+    max-height:70px;
+    object-fit:contain;
+    filter:brightness(100%);
 }
 
 /* ===========================
